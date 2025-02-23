@@ -23,3 +23,9 @@ scikit-learn
 xgboost
 catboost
 lightgbm
+Decisiontree
+randomforest
+linearregression
+lassoregression
+ridgeregression
+mlpregression
