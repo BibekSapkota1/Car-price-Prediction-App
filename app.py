@@ -122,3 +122,6 @@ if st.button("🔍 Predict Price"):
         st.error("⚠️ The predicted price seems unrealistic. Please check the input values.")
     else:
         st.success(f"💰 Predicted Car Price: ${predicted_price:,.2f}")
+
+
+

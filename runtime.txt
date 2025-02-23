@@ -1,1 +1,1 @@
-echo "3.10" > runtime.txt
+3.10
