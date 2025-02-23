@@ -4,10 +4,14 @@ import joblib
 import streamlit as st
 import numpy as np
 import pandas as pd
+import sklearn
+
+def load_model_compat(filename):
+    return joblib.load(filename, mmap_mode="r", fix_imports=True)
 
 # Load models
 models = {
- #   "Decision Tree": joblib.load("decisiontree_model.pkl"),
+    "Decision Tree": joblib.load("decisiontree_model.pkl"),
     "Random Forest": joblib.load("randomforest_model.pkl"),
     "Linear Regression": joblib.load("linear_regression_model.pkl"),
     "XGBoost": joblib.load("xgboost_model.pkl"),
@@ -18,6 +22,8 @@ models = {
     "Lasso Regression": joblib.load("lasso_model.pkl"),
     "Mlp Regression": joblib.load("mlp_model.pkl"),
 }
+
+print(f"✅ Models loaded successfully with scikit-learn {sklearn.__version__}")
 
 # Define ensemble weights
 model_weights = {
