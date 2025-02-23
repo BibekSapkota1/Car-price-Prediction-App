@@ -145,13 +145,13 @@ def load_model_compat(filename):
 
 # Load models safely
 models = {
-    "Decision Tree": load_model_compat("decisiontree_model.pkl"),
-    "Random Forest": load_model_compat("randomforest_model.pkl"),
+#    "Decision Tree": load_model_compat("decisiontree_model.pkl"),
+ #   "Random Forest": load_model_compat("randomforest_model.pkl"),
     "Linear Regression": load_model_compat("linear_regression_model.pkl"),
     "XGBoost": load_model_compat("xgboost_model.pkl"),
-    "CatBoost": load_model_compat("catboost_model.pkl"),
+ #   "CatBoost": load_model_compat("catboost_model.pkl"),
     "LG Boost": load_model_compat("lightgbm_model.pkl"),
-    "Aada Boost": load_model_compat("adaboost_model.pkl"),
+ #   "Aada Boost": load_model_compat("adaboost_model.pkl"),
     "Ridge Regression": load_model_compat("ridge_model.pkl"),
     "Lasso Regression": load_model_compat("lasso_model.pkl"),
     "Mlp Regression": load_model_compat("mlp_model.pkl"),
