@@ -7,7 +7,7 @@ import pandas as pd
 
 # Load models
 models = {
-    "Decision Tree": joblib.load("decisiontree_model.pkl"),
+ #   "Decision Tree": joblib.load("decisiontree_model.pkl"),
     "Random Forest": joblib.load("randomforest_model.pkl"),
     "Linear Regression": joblib.load("linear_regression_model.pkl"),
     "XGBoost": joblib.load("xgboost_model.pkl"),
